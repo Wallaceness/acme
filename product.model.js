@@ -27,7 +27,8 @@ module.exports = {
         return product.id;
     });
 
-    var maxId = Math.max.apply(allProductIds);
+    var maxId = Math.max.apply(null, allProductIds);
+    console.log(maxId);
   
     product.id = maxId + 1;
 
